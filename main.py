@@ -9,11 +9,11 @@ def main():
     epochs = 20
     model = trainer.fit(ALSModel, epochs)
 
-    user_id = 1  
-    movie_id = 10 
-    predicted_rating = model.predict(user_id, movie_id)
+    user_idx = 1  
+    movie_idx = 10 
+    predicted_rating = model.predict(user_idx, movie_idx)
 
-    print(f"Predicted rating for User {user_id} on Movie {movie_id}: {predicted_rating:.2f}")
+    print(f"Predicted rating for User {user_idx} on Movie {movie_idx}: {predicted_rating:.2f}")
 
 if __name__ == '__main__':
     main()
