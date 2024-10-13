@@ -1,5 +1,6 @@
 from src.trainer import Trainer
 from src.py.vanilla.als import ALSModel
+from src.py.jax.model import ALSJax
 
 
 def main():

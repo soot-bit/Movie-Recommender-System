@@ -1,4 +1,4 @@
-mport numpy as np
+import numpy as np
 import matplotlib.pyplot as plt
 
 class Plot:
@@ -145,8 +145,8 @@ def plot_rmse(cost, cost_test, save_fig=True, filename="RMSE.svg"):
     fig, ax = plt.subplots()
 
 
-    ax.plot(np.arange(0, len(cost), 1), cost, "r:", linewidth = 2.5, label="Train")
-    ax.plot(np.arange(0, len(cost_test), 1), cost_test, "b:", linewidth = 2.5, label="Test")
+    ax.plot(np.arange(0, len(cost), 1), cost, "r:", linewidth = 2, label="Train")
+    ax.plot(np.arange(0, len(cost_test), 1), cost_test, "b:", linewidth = 2, label="Test")
     ax.legend(loc="upper left", fontsize=12)
 
     # labels and title
